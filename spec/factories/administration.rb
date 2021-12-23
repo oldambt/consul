@@ -57,6 +57,10 @@ FactoryBot.define do
     body { "Some top links content" }
   end
 
+  factory :map do
+    association :budget, factory: :budget
+  end
+
   factory :map_location do
     latitude { 51.48 }
     longitude { 0.0 }

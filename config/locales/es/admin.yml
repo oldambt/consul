@@ -795,6 +795,7 @@ es:
       debates: "Debates"
       comments: "Comentarios"
       local_census_records: Gestionar censo local
+      maps: "Mapas"
     administrators:
       index:
         title: Administradores
@@ -1328,14 +1329,6 @@ es:
           disabled: "Funcionalidad desactivada"
           enable: "Activar"
           disable: "Desactivar"
-        map:
-          title: Configuración del mapa
-          help: Aquí puedes personalizar la manera en la que se muestra el mapa a los usuarios. Arrastra el marcador o pulsa sobre cualquier parte del mapa, ajusta el zoom y pulsa el botón 'Actualizar'.
-          flash:
-            update: La configuración del mapa se ha guardado correctamente.
-          form:
-            submit: Actualizar
-          how_to_enable: 'Para mostrar el mapa a los usuarios se debe de activar "Geolocalización de propuestas y proyectos de gasto" en la pestaña "Funcionalidades".'
         dashboard:
           title: Panel de progreso de propuestas
         remote_census:
@@ -1397,6 +1390,7 @@ es:
       close_modal: Cerrar ventana emergente
       learn_more: Saber más
       example_url: "https://consulproject.org"
+      back: "Volver"
     geozones:
       index:
         title: Zonas
@@ -1419,6 +1413,23 @@ es:
       delete:
         success: Zona borrada correctamente
         error: No se puede borrar la zona porque ya tiene elementos asociados
+    maps:
+      index:
+        title: "Configuración del mapa"
+        help: "Aquí puedes personalizar la manera en la que se muestra el mapa a los usuarios. Arrastra el marcador o pulsa sobre cualquier parte del mapa, ajusta el zoom y pulsa el botón \"Guardar mapa\"."
+        how_to_enable: "Para mostrar el mapa a los usuarios se debe de activar \"Geolocalización de propuestas y proyectos de gasto\" en la pestaña \"Funcionalidades\"."
+        budget: "Presupuesto Participativo"
+        default_map: "Mapa por defecto"
+        new_button: "Crear nuevo mapa"
+      edit:
+        submit: "Guardar mapa"
+      flash:
+        create: "Mapa creado correctamente."
+        destroy: "Mapa eliminado correctamente."
+        update: "Mapa guardado correctamente."
+      form:
+        continue: "Continuar"
+        submit: "Guardar coordenadas"
     signature_sheets:
       author: Autor
       created_at: Fecha de creación

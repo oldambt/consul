@@ -25,6 +25,7 @@ module Budgets
     before_action :set_random_seed, only: :index
     before_action :load_categories, only: [:index, :new, :create, :edit, :update]
     before_action :set_default_investment_filter, only: :index
+    before_action :load_budget_map, only: [:new, :edit]
     before_action :set_view, only: :index
     before_action :load_content_blocks, only: :index
 
@@ -188,6 +189,10 @@ module Budgets
           @budget.investments.apply_filters_and_search(@budget, params, @current_filter)
                              .send("sort_by_#{@current_order}")
         end
+      end
+
+      def load_budget_map
+        @budget_map = Map.find_by(budget: @budget)
       end
 
       def load_map
