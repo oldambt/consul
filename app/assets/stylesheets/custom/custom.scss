@@ -1,0 +1,121 @@
+// Customized styles
+//
+// 0. General
+// 1. Navigation & Footer
+// 2. Participation
+//
+
+// 0. General
+// ==========================
+
+a:focus {
+  outline: 3px solid $third;
+}
+
+.button {
+  color: $text;
+  font-weight: bold;
+
+  &:hover {
+    background: $third;
+    color: $text;
+  }
+}
+
+.home-page-steps {
+
+  a,
+  .number {
+    color: $link;
+  }
+}
+
+.home-page .card,
+.custom-page .card {
+
+  a {
+    background: $third;
+  }
+
+  .phase,
+  .completed {
+    color: $text;
+  }
+
+  h4:last-child,
+  p:last-child {
+    color: $text;
+    text-decoration: underline;
+  }
+
+  &.budget .description::after {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $third 50%);
+  }
+}
+
+.feed-content .feed-description a {
+  color: $link;
+}
+
+// 1. Navigation & Footer
+// ==========================
+
+.top-bar-title {
+  background: #fff;
+
+  &::before {
+    content: none;
+  }
+}
+
+.subnavigation {
+  background: $brand;
+
+  a {
+
+    &:hover,
+    &.is-active {
+      color: $text;
+      text-decoration: underline;
+    }
+  }
+}
+
+footer {
+  color: $text;
+}
+
+.footer {
+  background: #fff;
+  border-top: 4px solid $brand;
+  color: $text;
+
+  a,
+  .social a {
+    color: $text;
+
+    &:hover {
+      color: $text;
+      text-decoration: underline;
+    }
+  }
+}
+
+.subfooter {
+
+  > .column {
+    padding-top: $line-height / 3;
+  }
+
+  > .column ~ .column {
+    padding-top: 0;
+  }
+}
+
+// 2. Participation
+// ==========================
+
+.proposal-show .supports .button-support,
+.proposal .supports .button-support {
+  color: $text;
+}
