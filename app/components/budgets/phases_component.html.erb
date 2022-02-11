@@ -43,7 +43,7 @@
             <% end %>
           </div>
 
-          <div id="<%= phase.kind.parameterize %>" class="row budget-phase">
+          <div id="<%= phase.kind.parameterize %>" class="row">
             <div class="small-12 column <%= "medium-6" if phase.image.present? %>">
               <h3><%= phase.name %></h3>
               <p><%= start_date(phase) %> - <%= end_date(phase) %></p>
