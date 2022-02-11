@@ -34,7 +34,7 @@ a:focus {
 .custom-page .card {
 
   a {
-    background: $third;
+    background: $brand;
   }
 
   .phase,
@@ -49,7 +49,7 @@ a:focus {
   }
 
   &.budget .description::after {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $third 50%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), $brand 50%);
   }
 }
 
