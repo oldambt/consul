@@ -892,8 +892,16 @@ ActiveRecord::Schema.define(version: 2021_04_01_100648) do
     t.integer "zoom"
     t.integer "proposal_id"
     t.integer "investment_id"
+    t.integer "map_id"
     t.index ["investment_id"], name: "index_map_locations_on_investment_id"
     t.index ["proposal_id"], name: "index_map_locations_on_proposal_id"
+  end
+
+  create_table "maps", id: :serial, force: :cascade do |t|
+    t.integer "budget_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["budget_id"], name: "index_maps_on_budget_id"
   end
 
   create_table "milestone_statuses", id: :serial, force: :cascade do |t|

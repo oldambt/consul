@@ -1,5 +1,8 @@
-// Overrides and adds customized foundation settings in this file
-// Read more on documentation:
-// * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
-// * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
+// Custom settings
 //
+
+$brand:             #009de0;
+$brand-secondary:   #0076a8;
+$third:             #75ad3f;
+
+$link:              $brand-secondary;
