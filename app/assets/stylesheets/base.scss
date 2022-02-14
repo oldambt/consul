@@ -296,8 +296,8 @@ aside {
     @include breakpoint(medium) {
 
       img {
-        border-bottom-left-radius: rem-calc(12);
-        border-top-left-radius: rem-calc(12);
+        border-bottom-left-radius: rem-calc(10);
+        border-top-left-radius: rem-calc(10);
         max-width: none;
         height: 100%;
       }
@@ -830,6 +830,7 @@ body > header,
       color: $text;
       padding: 0;
       text-align: left;
+      text-decoration: none;
     }
   }
 }
