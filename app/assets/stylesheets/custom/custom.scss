@@ -3,6 +3,7 @@
 // 0. General
 // 1. Navigation & Footer
 // 2. Participation
+// 3. Custom pages
 //
 
 // 0. General
@@ -118,4 +119,17 @@ footer {
 .proposal-show .supports .button-support,
 .proposal .supports .button-support {
   color: $text;
+}
+
+// 3. Custom pages
+// ==========================
+
+.custom-page {
+
+  .button {
+
+    &.warning {
+      background-color: $third;
+    }
+  }
 }
