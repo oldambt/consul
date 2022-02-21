@@ -100,6 +100,23 @@ footer {
       text-decoration: underline;
     }
   }
+
+  .social {
+
+    [class^="fa"] {
+      color: $text;
+      font-size: rem-calc(40);
+      text-align: center;
+      width: auto;
+    }
+
+    a {
+      display: inline-block;
+      font-size: rem-calc(20);
+      line-height: rem-calc(40);
+      vertical-align: top;
+    }
+  }
 }
 
 .subfooter {

@@ -291,13 +291,9 @@ nl:
     admin:
       watch_form_message: "Je hebt niet-opgeslagen wijzigingen. Verlaat de pagina?"
     footer:
-      org_name: "CONSUL"
       contact_title: "Neem contact met ons op"
       privacy: "Privacyverklaring"
-      contact_email: "noreply@consul.dev"
-      contact: "noreply@consul.dev"
-      facebook: "facebook/consul"
-      facebook_url: "https://facebook.com/consul"
+      contact_email: "info@gemeente-oldambt.nl"
     dashboard:
       proposal_header:
         published: "Gepubliceerd"
