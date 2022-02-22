@@ -3,6 +3,7 @@
 // 0. General
 // 1. Navigation & Footer
 // 2. Participation
+// 3. Custom pages
 //
 
 // 0. General
@@ -71,6 +72,16 @@ a:focus {
 .subnavigation {
   background: $brand;
 
+  .dropdown {
+
+    &.menu > li {
+
+      &.is-active > a {
+        color: $text;
+      }
+    }
+  }
+
   a {
 
     &:hover,
@@ -99,6 +110,23 @@ footer {
       text-decoration: underline;
     }
   }
+
+  .social {
+
+    [class^="fa"] {
+      color: $text;
+      font-size: rem-calc(40);
+      text-align: center;
+      width: auto;
+    }
+
+    a {
+      display: inline-block;
+      font-size: rem-calc(20);
+      line-height: rem-calc(40);
+      vertical-align: top;
+    }
+  }
 }
 
 .subfooter {
@@ -118,4 +146,17 @@ footer {
 .proposal-show .supports .button-support,
 .proposal .supports .button-support {
   color: $text;
+}
+
+// 3. Custom pages
+// ==========================
+
+.custom-page {
+
+  .button {
+
+    &.warning {
+      background-color: $third;
+    }
+  }
 }
