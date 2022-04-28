@@ -52,3 +52,10 @@ nl:
         title: "Stuur verificatie instructies opnieuw"
       show:
         submit: "Bevestig"
+    mailer:
+      confirmation_instructions:
+        confirm_link: "Bevestig mijn"
+        text: "U kunt uw mailadres bevestigen door op de volgende link te klikken: "
+        text_2: "emailadres."
+        thanks: "Met vriendelijke groet,"
+        signature: "Gemeente Oldambt"
