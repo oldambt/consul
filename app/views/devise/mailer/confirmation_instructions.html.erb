@@ -10,9 +10,14 @@
 
   <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
     <%= t("devise_views.mailer.confirmation_instructions.text") %>
+    <%= link_to t("devise_views.mailer.confirmation_instructions.confirm_link"),
+                confirmation_url(@resource, confirmation_token: @token),
+                style: "color: #2895F1; text-decoration:none;" %>
+    <%= t("devise_views.mailer.confirmation_instructions.text_2") %>
   </p>
 
   <p style="font-family: 'Open Sans','Helvetica Neue',arial,sans-serif;font-size: 14px;font-weight: normal;line-height: 24px;">
-    <%= link_to t("devise_views.mailer.confirmation_instructions.confirm_link"), confirmation_url(@resource, confirmation_token: @token), style: "color: #2895F1; text-decoration:none;" %>
+    <%= t("devise_views.mailer.confirmation_instructions.thanks") %><br>
+    <%= t("devise_views.mailer.confirmation_instructions.signature") %>
   </p>
 </td>

@@ -129,6 +129,9 @@ ignore_missing:
   - "debates.index.section_footer.help_text_link"
   - "layouts.footer.contact_email"
   - "layouts.footer.contact_title"
+  - "devise_views.mailer.confirmation_instructions.text_2"
+  - "devise_views.mailer.confirmation_instructions.thanks"
+  - "devise_views.mailer.confirmation_instructions.signature"
 
 ## Consider these keys used:
 ignore_unused:
