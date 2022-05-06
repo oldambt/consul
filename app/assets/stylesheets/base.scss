@@ -458,15 +458,13 @@ body > header,
 .wrapper > header {
   background: none;
   border-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .top-bar {
   background: #fff !important;
   justify-content: space-between;
-
-  .menu {
-    border-bottom: 0;
-  }
 
   .menu > li {
 
@@ -556,6 +554,10 @@ body > header,
       }
     }
   }
+
+  .menu {
+    padding-left: $line-height / 2;
+  }
 }
 
 .menu-icon {
@@ -579,6 +581,7 @@ body > header,
 
 .menu-button {
   color: $brand;
+  margin-left: $line-height / 4;
 }
 
 .subnavigation {
@@ -692,9 +695,12 @@ body > header,
   }
 }
 
-.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  border-top-color: transparent;
-  margin-top: -8px;
+.dropdown.menu > li {
+
+  &.is-dropdown-submenu-parent > a::after {
+    border-top-color: transparent;
+    margin-top: -8px;
+  }
 }
 
 .top-bar {
@@ -733,6 +739,7 @@ body > header,
       background-position: 100% 30%;
       background-repeat: no-repeat;
       background-size: contain;
+      margin-right: calc(#{$global-width / 2} - 50vw);
       margin-top: $line-height * 2;
       min-height: $line-height * 20;
     }
@@ -744,11 +751,6 @@ body > header,
         font-size: rem-calc(60);
       }
     }
-  }
-
-  .lead {
-    font-weight: bold;
-    margin: $line-height * 2 0;
   }
 
   h2,
@@ -1162,9 +1164,12 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: calc(#{$global-width / 2} - 50vw);
-    margin-right: calc(#{$global-width / 2} - 50vw);
-    overflow-x: hidden;
+
+    @include breakpoint(large) {
+      margin-left: calc(#{$global-width / 2} - 50vw);
+      margin-right: calc(#{$global-width / 2} - 50vw);
+      overflow-x: hidden;
+    }
   }
 
   &.groups {
@@ -1269,7 +1274,7 @@ footer {
       }
 
       &:hover {
-       color: $white;
+        color: $white;
 
         &::after {
           border-left-color: $dark;
@@ -2173,6 +2178,22 @@ footer {
   min-width: 0;
 }
 
+.admin {
+
+  .top-links {
+    justify-content: right;
+
+    a {
+      flex-grow: unset;
+    }
+  }
+
+  .top-links .locale,
+  .top-bar h1 {
+    padding-left: $line-height / 2;
+  }
+}
+
 .ui-datepicker-calendar thead tr th {
   border: 1px solid $border;
 }
@@ -2789,6 +2810,10 @@ footer {
   }
 }
 
+.verification button {
+  min-height: 0;
+}
+
 // 13. Custom
 // ------------------------------
 
@@ -3229,7 +3254,6 @@ footer {
 
       &.current-phase {
         background: $brand-secondary;
-        background: red;
         color: #fff;
 
         &::after {
